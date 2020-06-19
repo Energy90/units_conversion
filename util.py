@@ -1,4 +1,4 @@
-import json
+
 from collections import OrderedDict
 
 tables = [('TA','Tables'), ('LU', 'Length Units'), ('AU', 'Area Units'), ('VU', 'Volume Units'), 
