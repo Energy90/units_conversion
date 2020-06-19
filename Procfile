@@ -1,1 +1,1 @@
-web: gunicorn units_conversion:app
+web: gunicorn conversion:app
