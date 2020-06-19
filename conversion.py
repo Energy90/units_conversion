@@ -20,7 +20,8 @@ app.config['SIJAX_JSON_URI'] = '/static/js/sijax/json2.js'
 
 bootstrap = Bootstrap(app)
 sijax = Sijax(app)
-#SECRET_KEY = os.environ.get('SECRET_KEY') or 'let-use-units-conversion-table'
+
+app.secret_key = os.urandom(16) or b'\xf1qE\x8d[\x1e\xb8\x80q\xd8F\xb8\xb4\\=\xb2\xca\xd0VU>5R\x9d'
 
 if not app.debug and not app.testing:
    if app.config['LOG_TO_STDOUT']:
