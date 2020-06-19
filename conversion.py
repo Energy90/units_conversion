@@ -6,6 +6,7 @@ from flask_sijax import Sijax
 from helpers import SijaxHandler
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
+import logging
 
 #LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
