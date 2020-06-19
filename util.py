@@ -4,7 +4,7 @@ from collections import OrderedDict
 tables = [('TA','Tables'), ('LU', 'Length Units'), ('AU', 'Area Units'), ('VU', 'Volume Units'), 
         ('MU', 'Mass Units'), ('DU', 'Density Units'), ('VLFU', 'Volumetric Liquid Flow Unit'),
         ('VGFU', 'Volume Gas Flow Units'), ('MFU', 'Mass Flow Units'), ('HPU', 'High Pressure Unit'),
-        ('LPU', 'Low Pressure Units'), ('SP', 'Speed Unit'), ('TU', 'Torque Units'), ('DVU', 'Dynamic Viscosity Units'),
+        ('LPU', 'Low Pressure Units'), ('SU', 'Speed Unit'), ('TU', 'Torque Units'), ('DVU', 'Dynamic Viscosity Units'),
         ('KVU', 'Kinematic Viscosity Units'), ('TCF', 'Temperature Conversion Formulas')]
 
 units = {
