@@ -36,6 +36,8 @@
             $(document).ready(function(){
                 $("#units_tables").bind('change', function(){
                     Sijax.request('categories', [$('#units_tables').attr('value')]);
+                    $('#input_field, #output_field').val("");
+                    $('#input_field').focus();
                     return false;
                 });
 
