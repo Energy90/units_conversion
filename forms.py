@@ -9,4 +9,4 @@ class ConversionForm(FlaskForm):
     units_2 = SelectField("", choices=[('Unit', 'Unit')], validators=[DataRequired()])
     input_field = FloatField("", validators=[DataRequired()], render_kw={"placeholder":"0.00"})
     output_field = FloatField("", render_kw={"placeholder":"0.00"})
-    #convert = SubmitField("Convert")
+
