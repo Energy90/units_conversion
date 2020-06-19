@@ -7,7 +7,7 @@ from helpers import SijaxHandler
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 
-LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
+#LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
 path = os.path.join('.', os.path.dirname(__file__), 'static/js/sijax/')
 
@@ -20,6 +20,8 @@ bootstrap = Bootstrap(app)
 sijax = Sijax(app)
 
 app.secret_key = os.urandom(16) or b'\xf1qE\x8d[\x1e\xb8\x80q\xd8F\xb8\xb4\\=\xb2\xca\xd0VU>5R\x9d'
+
+app.config['LOG_TO_STDOUT'] = os.environ.get('LOG_TO_STDOUT')
 
 if not app.debug and not app.testing:
    if app.config['LOG_TO_STDOUT']:
